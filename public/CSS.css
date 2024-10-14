@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ec99d2;
+    background-image: url('https://wallpapercave.com/wp/wp3157012.jpg'); /* cute doodle background */
+    background-size: cover;
+}
+
+.container {
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 0px;
+    border: 0px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 200px;
+    text-align: center;
+}
+
+.cat-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;  
+    text-align: center;  
+}
+
+.cat-image-container img {
+    margin: 0 auto;
+}
+
+.question {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.yes-btn, .no-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.yes-btn {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+.no-btn {
+    background-color: #826892;
+    color: #ffffff;
+}
+
+.yes-btn:hover, .no-btn:hover {
+    opacity: 0.8;
+}
+
+.hacked-background {
+    background-image: url('https://i.pinimg.com/originals/78/c6/33/78c6338be3853a3e2aa67711e854038f.gif');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.dancing-gif {
+    position: absolute;
+    z-index: 1001;
+    display: none;
+    width: 270;
+    height: 256;
+    object-fit: contain;
+    margin: 0 auto;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.question {
+    margin-top: 130px;
+}
+
+
+/* Popup styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffe6f9; /* Soft pink background */
+    border-radius: 35px; /* Increased border radius for a rounder edge */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px; /* Reduced padding to make the popup smaller */
+    z-index: 2000;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    opacity: 0; /* Initially transparent */
+    width: 366px; /* Set a fixed width to cover the question behind it */
+    height: 110px; /* Set a fixed height to maintain a reasonable aspect ratio */
+}
+
+.popup.show {
+    display: block; /* Show the popup */
+    opacity: 1; /* Fully opaque */
+    transform: translate(-50%, -50%) translateY(0); /* Reset translateY */
+}
+
+.popup.hide {
+    transform: translate(-50%, -50%) translateY(-20px); /* Slide out effect */
+    opacity: 0; /* Fade out */
+}
+
+/* Add some kawaii styles */
+.popup-content {
+    text-align: center;
+}
+
+.popup-content h2 {
+    font-size: 20px;
+    color: #bb1f85; /* Pastel pink text */
+}
+
+.popup-content img {
+    width: 115px;
+    height: 84px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Keep the dancing GIF visible until the close button is clicked */
+.cat-image-container {
+    position: relative;
+    z-index: 1000; /* Ensure the dancing GIF is on top of the popup */
+}
+
+.compromised-popup, .just-kidding-popup {
+    display: none; /* Hide by default */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #21b947; /* Green background */
+    border: 1px solid #388f09;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.compromised-popup.show, .just-kidding-popup.show {
+    display: block;
+}
+
+.compromised-popup.hide, .just-kidding-popup.hide {
+    display: none;
+}
+
+.compromised-popup, .just-kidding-popup {
+    display: none; /* Hide by default */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #21b947; /* Green background */
+    border: 1px solid #388f09;
+    padding: 10px;
+    z-index: 2000; /* Set the z-index to a higher value than the hacked background */
+}
+
+.hacked-background {
+    z-index: 1000; /* Set the z-index to a lower value than the pop-ups */
+}
