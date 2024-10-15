@@ -101,7 +101,7 @@ body {
     top: 61%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ffe6f9; /* Soft pink background */
+    background-color: #ff8dbe; /* Soft pink background */
     border-radius: 35px; /* Increased border radius for a rounder edge */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 30px; /* Reduced padding to make the popup smaller */
