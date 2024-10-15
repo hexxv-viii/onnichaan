@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ec99d2;
-    background-image: url('https://wallpapercave.com/wp/wp3157012.jpg'); /* cute doodle background */
+    background-image: url('https://media.istockphoto.com/vectors/pink-doodle-hearts-seamless-pattern-vector-id1204701402?k=20&m=1204701402&s=612x612&w=0&h=Y_AU8pdaUoQElfgkjin-nyrhIRiuH-YSZM4QPxTsuJo='); /* cute doodle background */
     background-size: cover;
 }
 
@@ -32,7 +32,7 @@ body {
     font-size: 27px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-decoration-color:rgb(0, 0, 0);
+    text-decoration-color: rgb(255, 255, 255)
 }
 
 .options {
